@@ -1,0 +1,167 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+    font-size: large;
+}
+body{
+    background-image: url(../imges/bgcard.svg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position-x: right;
+
+}
+
+.container .total {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    background-color: #fff;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+}
+
+.container .total p:nth-child(1) {
+    font-weight: 600;
+}
+
+.container .total p:nth-child(2) {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+
+}
+
+.container .total button {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.container .total #sign {
+    background-color: #c2c2c2;
+    width: 70%;
+    font-size: small;
+    height: 1.5rem;
+
+}
+
+.container .products {
+    padding: 1rem;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.product {
+    background-color: #fff;
+    width: 100%;
+    height:fit-content;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px auto;
+    /* //عشان الصورة تاخد نفس الاطار */
+    overflow: hidden;
+    padding: 1rem;
+
+}
+
+.product .product-Image {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+
+.product .product-Info {
+    width: 65%;
+    padding: 1rem;
+    float: right;
+
+}
+
+.product .product-Info .proTitle {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.product .product-Info .proRating ul {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
+    color: gold;
+}
+
+.product .product-Info .proRating ul li,
+.votes {
+    display: inline;
+
+}
+.votes {
+    color: #595959;
+}
+.product .product-Info .price{
+    font-size: x-large;
+    font-weight: 600;
+}
+.product .product-Info .category , .votes{
+    font-size: medium;
+    margin-bottom: 2rem;
+}
+
+.product .product-Info button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px 20px;
+    
+    
+}
+
+.product .product-Info button:hover {
+    box-shadow: none;
+    background-color: #45a049;
+}
+.product .product-Info input:active ,.container .total button:active{
+    top: 1px;
+}
+
+
+.product .product-Info input {
+    width: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    height: 2rem;
+    border-radius: 10px;
+    text-indent: 7px;
+    outline: none;
+    margin-right: 2rem;
+    position: relative;
+
+}
