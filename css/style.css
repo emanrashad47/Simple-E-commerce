@@ -1,0 +1,253 @@
+/* header styling */
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+}
+
+/* الخلفية */
+body{
+    background-image: url(../imges/bgindex.png);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    height: fit-content;
+    padding: 1.5rem;
+    background-color: #4D869C;
+    color: white;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+button {
+    cursor: pointer;
+}
+
+
+header .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0;
+}
+
+header .logincard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .search #searchInput {
+    height: 40px;
+    width: 90%;
+    display: inline-block;
+    padding: 9px;
+    border: none;
+    font-size: 1rem;
+    text-align: left;
+    text-indent: 8px;
+    outline: none;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+header .search #searchthis{
+    margin: 1px;
+}
+
+header .search #searchthis,
+header .card #showCart {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* لتكبير ايقونات الازرار */
+header img{
+    transform: scale(1.5);
+}
+
+
+header .card {
+    width: 20%;
+    float: right;
+    
+}
+
+/* عشان احط الرقم لفوق */
+header .card #showCart {
+    position: relative;
+}
+
+header .card #showCart #countProduct {
+    position: absolute;
+    top: -3px;
+    right: -11px;
+    background-color: rgb(226, 41, 41);
+    color: white;
+    font-size: 15px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+header .card span {
+    font-size: 14px;
+}
+
+/* end of header style */
+
+
+/* ======================================================================================================== */
+
+
+/* products styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    width: 80%;
+    padding-top: 6.5rem;
+    margin: 0 auto;
+}
+
+.product {
+    display: inline-block;
+    height: 26rem;
+    width: 15rem;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2),-2px -2px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 5px ;
+    background-color: #f8f7f7;
+    /* عشان حدود الصورة */
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.product .product-Image {
+    height: 11rem;
+    background-color: #fff;
+    text-align: center;
+}
+.product .product-Image img{
+    height: 100%;
+    object-fit: contain;
+    max-width:15rem ;
+}
+.product .product-Image img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.product .product-Info {
+    padding: 10px;
+    
+}
+
+.product .product-Info .proTitle {
+    height: 6rem;
+}
+
+.product .product-Info .proContent {
+    height: 5rem;
+}
+
+.product .product-Info .proTitle {
+    font-weight: 400;
+}
+
+.product .product-Info .proContent .pandc,
+.product .product-Info .proContent .proRating,
+.product .product-Info .proContent .proRating ul li {
+    display: inline-block;
+}
+
+.product .product-Info .proContent .pandc span {
+    display: block;
+}
+
+.product .product-Info .proContent .pandc .price {
+    font-size: larger;
+
+}
+
+.product .product-Info .proContent .pandc .category {
+    font-size: smaller;
+}
+
+.product .product-Info .proContent .proRating ul {
+    list-style: none;
+}
+
+.product .product-Info .proContent .proRating ul li i {
+    color: gold;
+    font-size: x-small;
+}
+
+.product .product-Info .proContent .proRating .votes {
+    font-size: smaller;
+    display: block;
+}
+
+.product .product-Info .proContent .proRating {
+    float: right;
+    width: 60%;
+}
+
+.product .product-Info .proContent .pandc {
+    width: 40%;
+}
+
+
+.product .clickMe {
+    width: 80%;
+    height: 1.8rem;
+    font-size: 15px;
+    position: relative;
+    left: 23px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.product .clickMe:hover {
+    background-color: #45a049;
+    box-shadow: none;
+}
+
+.product .clickMe:active {
+    top: 2px;
+}
+
+/* end of products styling */

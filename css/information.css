@@ -1,0 +1,111 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+}
+
+.container {
+    width: 50%;
+    padding: 1rem;
+    margin:1rem ;
+}
+
+body{
+    background-image: url(../imges/bginfo.svg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position-x: right;
+
+}
+
+.container .product {
+    height: fit-content;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    animation: bshadow 1.5s linear infinite;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+} 
+
+.container .product .product-Image {
+    width: 30%;
+    float: left;
+}
+
+.container .product .product-Info {
+    display: inline-block;
+    width: 65%;
+    padding: 1rem;
+    margin-left: 1rem;
+
+}
+
+.container .product .product-Info .proTitle {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.container .product .product-Info .proRating ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.container .product .product-Info .proRating ul li {
+    display: inline;
+    color: gold;
+}
+
+.container .product .product-Info .price {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.container .product .product-Info .description {
+    margin: 10px 0;
+}
+
+.container .product .product-Info .proDescription {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.container .product .product-Info button.clickMe {
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px 20px 20px 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+}
+
+.container .product .product-Info button.clickMe:hover {
+    background-color: #45a049;
+    box-shadow: none;
+}
+.container .product .product-Info button.clickMe:active{
+    top: 2px;
+}
+@keyframes bshadow{
+    0%{
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    }
+    50%{
+        box-shadow: 0px 8px 8px 0px rgb(77, 134, 156,0.8);
+    }
+    100%{
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    }
+}
